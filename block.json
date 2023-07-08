@@ -1,0 +1,28 @@
+{
+	"apiVersion": 2,
+	"name": "catia/cards",
+	"title": "Cards Listing and single Cards",
+	"category": "design",
+	"icon": "screenoptions",
+	"description": "Create a list of cards with special design functions",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"prefix_id": {
+			"type": "number"
+		},
+		"check_with_numbers": {
+			"type": "boolean",
+			"default": false
+		},
+		"layout": {
+			"type": "string",
+			"default": "grid"
+		}
+	},
+	"textdomain": "catia-cards",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

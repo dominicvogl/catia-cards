@@ -1,0 +1,46 @@
+.wp-block-catia-cards {
+	--cards-marker-color: yellow;
+	--cards-marker-size: 1.2em;
+	--cards-marker-weight: bold;
+	--cards-marker-margin-block: 6.25rem;
+
+	&.layout-grid {
+		> .card-list {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+			gap: var(--medium-gap);
+
+			&.with-numbers {
+				li {
+					list-style-position: inside;
+
+					&::marker {
+						display: block;
+						position: relative;
+						font-family: inherit;
+						content:"0" counter(list-item);
+
+						font-size: var(--cards-marker-size);
+						font-weight: var(--cards-marker-weight);
+						color: var(--cards-marker-color);
+					}
+
+					.wp-block-heading {
+						margin-block-start: var(--cards-marker-margin-block);
+					}
+				}
+			}
+		}
+	}
+}
+
+.wp-block-catia-card {
+	--card-border: #555;
+	--card-radius: 15px;
+	--card-padding: 20px;
+
+	border-radius: var(--card-radius);
+	border: 2px solid var(--card-border);
+	padding: var(--card-padding);
+}
+

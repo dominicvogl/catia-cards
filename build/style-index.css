@@ -1,0 +1,41 @@
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+.wp-block-catia-cards {
+  --cards-marker-color: yellow;
+  --cards-marker-size: 1.2em;
+  --cards-marker-weight: bold;
+  --cards-marker-margin-block: 6.25rem;
+}
+.wp-block-catia-cards.layout-grid > .card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  gap: var(--medium-gap);
+}
+.wp-block-catia-cards.layout-grid > .card-list.with-numbers li {
+  list-style-position: inside;
+}
+.wp-block-catia-cards.layout-grid > .card-list.with-numbers li::marker {
+  display: block;
+  position: relative;
+  font-family: inherit;
+  content: "0" counter(list-item);
+  font-size: var(--cards-marker-size);
+  font-weight: var(--cards-marker-weight);
+  color: var(--cards-marker-color);
+}
+.wp-block-catia-cards.layout-grid > .card-list.with-numbers li .wp-block-heading {
+  -webkit-margin-before: var(--cards-marker-margin-block);
+          margin-block-start: var(--cards-marker-margin-block);
+}
+
+.wp-block-catia-card {
+  --card-border: #555;
+  --card-radius: 15px;
+  --card-padding: 20px;
+  border-radius: var(--card-radius);
+  border: 2px solid var(--card-border);
+  padding: var(--card-padding);
+}
+
+/*# sourceMappingURL=style-index.css.map*/

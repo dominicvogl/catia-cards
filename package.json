@@ -1,0 +1,26 @@
+{
+	"name": "catia-cards",
+	"version": "1.0.0",
+	"description": "Create a list of cards with special design functions",
+	"author": "Dominic Vogl",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"Cards",
+		"Grid",
+		"List",
+		"Borders"
+	],
+	"main": "build/index.js",
+	"scripts": {
+		"build": "wp-scripts build",
+		"start": "wp-scripts start",
+		"packages-update": "wp-scripts packages-update"
+	},
+	"prettier": "@wordpress/prettier-config",
+	"dependencies": {
+		"@wordpress/block-editor": "^12.2.0",
+		"@wordpress/components": "^25.2.0",
+		"@wordpress/i18n": "^4.36.0",
+		"@wordpress/scripts": "^26.4.0"
+	}
+}
