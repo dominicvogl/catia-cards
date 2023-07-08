@@ -4,6 +4,23 @@
 	--cards-marker-weight: bold;
 	--cards-marker-margin-block: 6.25rem;
 
+	&.layout-vertical {
+		> .card-list {
+			display: flex;
+			flex-direction: column;
+			gap: var(--medium-gap);
+
+			.wp-block-catia-card {
+				@media (hover:hover) {
+					&:hover {
+						--card-border-color: var(--dv-primary-dark);
+					}
+				}
+			}
+		}
+	}
+
+	// styles specific to the grid layout
 	&.layout-grid {
 		> .card-list {
 			display: grid;
