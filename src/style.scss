@@ -4,6 +4,34 @@
 	--cards-marker-weight: bold;
 	--cards-marker-margin-block: 6.25rem;
 
+	> .card-list {
+		&.with-numbers {
+			li {
+				list-style-position: inside;
+
+				&::marker {
+					display: block;
+					position: relative;
+					font-family: inherit;
+					content:"0" counter(list-item);
+
+					font-size: var(--cards-marker-size);
+					font-weight: var(--cards-marker-weight);
+					color: var(--cards-marker-color);
+
+					@media (hover: hover) {
+						transition: color 0.3s ease-in-out;
+					}
+				}
+
+				.wp-block-heading {
+					margin-block-start: var(--cards-marker-margin-block);
+				}
+			}
+		}
+	}
+
+	// VERTICAL LAYOUT
 	&.layout-vertical {
 		> .card-list {
 			display: flex;
@@ -20,37 +48,23 @@
 		}
 	}
 
-	// styles specific to the grid layout
+	// HORIZONTAL LAYOUT
+	&.layout-horizontal {
+		> .card-list {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+			gap: var(--medium-gap);
+		}
+	}
+
+	// GRID LAYOUT
 	&.layout-grid {
 		> .card-list {
 			display: grid;
 			grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
 			gap: var(--medium-gap);
 
-			&.with-numbers {
-				li {
-					list-style-position: inside;
 
-					&::marker {
-						display: block;
-						position: relative;
-						font-family: inherit;
-						content:"0" counter(list-item);
-
-						font-size: var(--cards-marker-size);
-						font-weight: var(--cards-marker-weight);
-						color: var(--cards-marker-color);
-
-						@media (hover: hover) {
-							transition: color 0.3s ease-in-out;
-						}
-					}
-
-					.wp-block-heading {
-						margin-block-start: var(--cards-marker-margin-block);
-					}
-				}
-			}
 		}
 
 		@media (hover: hover) {
