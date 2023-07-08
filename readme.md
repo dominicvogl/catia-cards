@@ -1,56 +1,53 @@
-=== Boilerplate ===
-Contributors:      Dominic Vogl
-Tags:              Custom Gutenberg Block
-Tested up to:      6.2
-Stable tag:        0.1.0
-License:           GPL-2.0-or-later
-License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+# Custom Gutenberg Block Plugin: Cat-ia Cards
 
-# Custom Gutenberg Block Plugin: Catia Carousel
+**Contributors:** Dominic Vogl
+**Tags:** Custom Gutenberg Block
+**Tested up to:** 6.2
+**Stable tag:** 0.1.0
+**License:** GPL-3.0-or-later
+**License URI:** https://www.gnu.org/licenses/gpl-3.0.html
 
-This is a simple WordPress Gutenberg block plugin, built for creating an Catia Carousel. Each slide includes a headline, subline, background image, and a URL for linking to. The carousel functionality is powered by Swiper.js.
+## Description
+
+Cat-ia Cards is a custom WordPress Gutenberg block plugin, designed to provide advanced styling and layout options for unordered (ul) or ordered (ol) lists in Gutenberg. This unique block comes with extra styles, CSS variables for flexible design control, and three different layout styles: Grid, Vertical Flex, and Horizontal Flex.
 
 ## Features
 
-- Custom Gutenberg block for an Catia Carousel
-- Headline and Subline text fields
-- Option to add background image
-- URL field for each slide
-- Carousel functionality powered by Swiper.js
+- Custom Gutenberg block for enriched list designs
+- Support for both unordered (ul) and ordered (ol) lists
+- Additional style controls
+- CSS variables for extended design flexibility
+- Three layout styles: Grid, Vertical Flex, and Horizontal Flex
 
 ## Installation
 
 1. Download or clone this repository to your local machine.
-2. Copy the plugin directory into your WordPress installation's `wp-content/plugins` directory.
-3. In your WordPress admin area, go to the plugins page.
-4. Activate the `Custom Gutenberg Block: Catia Carousel` plugin.
+2. Transfer the plugin directory into your WordPress installation's `wp-content/plugins` directory.
+3. In your WordPress admin panel, navigate to the plugins page.
+4. Activate the `Custom Gutenberg Block: Cat-ia Cards` plugin.
 
 ## Usage
 
-After activation, you'll find the `Catia Carousel` block in the Gutenberg editor under the `Common Blocks` category.
+Upon activation, the `Cat-ia Cards` block can be located in the Gutenberg editor within the `Common Blocks` category.
 
-To use the `Catia Carousel` block, follow these steps:
+To use the `Cat-ia Cards` block, follow these steps:
 
-1. Click on the `+` button in the editor to open the block library.
-2. Search for `Catia Carousel` and click on it to add it to your page or post.
-3. Click on the block that was added to the post/page. You will see options to add/edit headline, subline, background image, and URL on the right-hand side under block settings.
+1. Press the `+` button in the editor to open the block library.
+2. Search for `Cat-ia Cards` and select it to insert it into your page or post.
+3. Click on the newly inserted block. You will notice options to modify list type, styles, CSS variables, and layout on the right-hand side in the block settings.
 
 ## Configuration
 
-The slider uses Swiper.js for the carousel functionality. It is pre-configured with default options, but you can modify these in the `editable-slider.js` file.
+The Cat-ia Cards block provides you with various configurations for enhancing list designs. You can specify your preferred list type (ul/ol), select one of the three layout styles (grid, vertical flex, horizontal flex), apply custom styles, and use CSS variables for more granular design control.
 
 ## Contributing
 
-Contributions are always welcome! Please read the contribution guidelines first.
+Contributions are always encouraged! Please read the [contribution guidelines](CONTRIBUTING.md) first.
 
 ## Support
 
-If you encounter any issues or have any questions about this plugin, please open a GitHub issue. We'll do our best to solve them as soon as possible.
+If you face any issues or have any queries about this plugin, please open a [GitHub issue](https://github.com/dominicvogl/catia-cards/issues). We'll strive to resolve them as promptly as possible.
 
 ## License
 
-This plugin is licensed under the [GNU General Public License v2.0](http://www.gnu.org/licenses/gpl-2.0.html).
-
-## Disclaimer
-
-This plugin uses the Swiper.js library, which is not affiliated with or endorsed by this plugin's authors. Please refer to the [Swiper.js documentation](https://swiperjs.com/) for any questions or issues related to the carousel functionality.
+This plugin is licensed under the [GNU General Public License v3.0](http://www.gnu.org/licenses/gpl-3.0.html).
