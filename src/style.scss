@@ -23,6 +23,10 @@
 						font-size: var(--cards-marker-size);
 						font-weight: var(--cards-marker-weight);
 						color: var(--cards-marker-color);
+
+						@media (hover: hover) {
+							transition: color 0.3s ease-in-out;
+						}
 					}
 
 					.wp-block-heading {
@@ -31,16 +35,30 @@
 				}
 			}
 		}
+
+		@media (hover: hover) {
+			&:hover {
+				.wp-block-catia-card {
+					opacity: 0.65;
+					filter: blur(2px);
+
+					&:hover {
+						opacity: 1;
+						filter: none;
+					}
+				}
+			}
+		}
 	}
 }
 
 .wp-block-catia-card {
-	--card-border: #555;
-	--card-radius: 15px;
+	--card-border-color: #555;
+	--card-radius: 0;
 	--card-padding: 20px;
 
 	border-radius: var(--card-radius);
-	border: 2px solid var(--card-border);
+	border: 2px solid var(--card-border-color);
 	padding: var(--card-padding);
 }
 

@@ -24,17 +24,32 @@
   font-weight: var(--cards-marker-weight);
   color: var(--cards-marker-color);
 }
+@media (hover: hover) {
+  .wp-block-catia-cards.layout-grid > .card-list.with-numbers li::marker {
+    transition: color 0.3s ease-in-out;
+  }
+}
 .wp-block-catia-cards.layout-grid > .card-list.with-numbers li .wp-block-heading {
   -webkit-margin-before: var(--cards-marker-margin-block);
           margin-block-start: var(--cards-marker-margin-block);
 }
+@media (hover: hover) {
+  .wp-block-catia-cards.layout-grid:hover .wp-block-catia-card {
+    opacity: 0.65;
+    filter: blur(2px);
+  }
+  .wp-block-catia-cards.layout-grid:hover .wp-block-catia-card:hover {
+    opacity: 1;
+    filter: none;
+  }
+}
 
 .wp-block-catia-card {
-  --card-border: #555;
-  --card-radius: 15px;
+  --card-border-color: #555;
+  --card-radius: 0;
   --card-padding: 20px;
   border-radius: var(--card-radius);
-  border: 2px solid var(--card-border);
+  border: 2px solid var(--card-border-color);
   padding: var(--card-padding);
 }
 
