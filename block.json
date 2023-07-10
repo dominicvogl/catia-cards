@@ -16,7 +16,7 @@
 		"prefix_id": {
 			"type": "number"
 		},
-		"check_with_numbers": {
+		"checkWithNumbers": {
 			"type": "boolean",
 			"default": false
 		},

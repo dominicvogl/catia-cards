@@ -5,17 +5,15 @@ export default function save({ attributes }) {
 
 	return (
 		<section {...useBlockProps.save({ className: `layout-${layout}` })}>
-			{
-				checkWithNumbers ? (
-					<ol className="card-list with-numbers">
-						<InnerBlocks.Content />
-					</ol>
-				) : (
-					<ul className="card-list">
-						<InnerBlocks.Content />
-					</ul>
-				)
-			}
+			{checkWithNumbers ? (
+				<ol className="card-list with-numbers">
+					<InnerBlocks.Content />
+				</ol>
+			) : (
+				<ul className="card-list">
+					<InnerBlocks.Content />
+				</ul>
+			)}
 		</section>
 	);
 }
