@@ -1,42 +1,48 @@
 .wp-block-catia-cards {
 
-	// GRID LAYOUT
-	&.layout-grid {
-		.card-list {
-			display: block;
-			padding-left: 0;
-		}
-
-		.block-editor-block-list__layout {
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
-			gap: var(--medium-gap);
-		}
+	> .card-list {
+		&:not(.with-numbers) {
+		list-style: none;
 	}
 
-	// HORIZONTAL LAYOUT
-	&.layout-horizontal {
-		.card-list {
-			display: block;
-			padding-left: 0;
+		// GRID LAYOUT
+		&.layout-grid {
+			.card-list {
+				display: block;
+				padding-left: 0;
+			}
+
+			.block-editor-block-list__layout {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+				gap: var(--medium-gap);
+			}
 		}
 
-		.block-editor-block-list__layout {
-			display: grid;
-			grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-			gap: var(--medium-gap);
+		// HORIZONTAL LAYOUT
+		&.layout-horizontal {
+			.card-list {
+				display: block;
+				padding-left: 0;
+			}
+
+			.block-editor-block-list__layout {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+				gap: var(--medium-gap);
+			}
 		}
-	}
 
-	li[data-type="catia/card"] {
-		.block-editor-inner-blocks {
-			--card-border-color: #555;
-			--card-radius: 0;
-			--card-padding: 20px;
+		li[data-type="catia/card"] {
+			.block-editor-inner-blocks {
+				--card-border-color: #555;
+				--card-radius: 0;
+				--card-padding: 20px;
 
-			border-radius: var(--card-radius);
-			border: 2px solid var(--card-border-color);
-			padding: var(--card-padding);
+				border-radius: var(--card-radius);
+				border: 2px solid var(--card-border-color);
+				padding: var(--card-padding);
+			}
 		}
 	}
 }
